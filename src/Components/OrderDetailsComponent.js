@@ -1,8 +1,13 @@
 import React, {useState} from "react";
 
-function OrderDetailsComponent(){
+function OrderDetailsComponent({registerSubmit}){
 
     const [state, setState] = useState({})
+
+    function submitForm(){
+       
+    }
+    registerSubmit(submitForm)
 
 
     return(
