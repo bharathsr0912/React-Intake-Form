@@ -64,3 +64,8 @@
 .text-red{
   color:red
 }
+
+.danger-text-position{
+  position: relative;
+  top:-10%
+}

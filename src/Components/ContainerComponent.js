@@ -5,16 +5,19 @@ import OrderDetailsComponent from './OrderDetailsComponent';
 import ProductSummaryComponent from './ProductSummaryComponent';
 import AttachmentsComponent from './AttachmentsComponent';
 
+import ConvertToPDF from "../Services/pdfService";
+
 function ContainerComponent(){
     const customerInformationForm = useRef(null)
     const orderDetailsForm = useRef(null)
     const productSummaryform = useRef(null)
 
     function submitForm(){
-        console.log("Submit clicked")
         customerInformationForm.current();
         orderDetailsForm.current();
         productSummaryform.current();
+
+        ConvertToPDF();
     }
 
     return(
