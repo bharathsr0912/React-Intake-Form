@@ -69,3 +69,16 @@
   position: relative;
   top:-10%
 }
+
+.select-style{
+  width:100%;
+  font-size:90%
+}
+
+.background-color-grey{
+  background-color: #dedfe0;
+}
+
+.pointer{
+  cursor: pointer;
+}

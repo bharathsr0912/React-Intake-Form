@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import ErrorFieldComponent from "./Commo/ErrorFieldComponent";
 import { validateForm } from "../Services/formValidationService";
 
-function ProductSummaryComponent({registerSubmit}){
+function ProductSummaryComponent({registerSubmit,clearForm}){
 
     const [state, setState] = useState({
         windows:{
@@ -21,6 +21,7 @@ function ProductSummaryComponent({registerSubmit}){
     function submitForm(){
         const [validationResult, tempState] = validateForm(state)
         setState(tempState) 
+        return validationResult;
     }
 
     function updateState(value,id){
@@ -33,7 +34,24 @@ function ProductSummaryComponent({registerSubmit}){
             }
         }))
     }
+
+    function clearState(){
+        setState({
+            windows:{
+                value:"",
+                errorStatus:false,
+                errorMessage:""
+            },
+            cleanBcIqpCode:{
+                value:"",
+                errorStatus:false,
+                errorMessage:""
+            }
+        })
+    }
+
     registerSubmit(submitForm)
+    clearForm(clearState)
 
     return(
         <div className="card rounded-0">
@@ -64,7 +82,7 @@ function ProductSummaryComponent({registerSubmit}){
                             {state.cleanBcIqpCode.errorStatus?<ErrorFieldComponent data={state.cleanBcIqpCode.errorMessage}/>:""}
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                        <select onChange={(e)=>{updateState(e.target.value, "cleanBcIqpCode")}} style={{"width":"100%"}}>
+                        <select onChange={(e)=>{updateState(e.target.value, "cleanBcIqpCode")}} className="select-style border">
                             <option disbaled>Select Option</option>
                             <option value="yes">Yes</option>
                             <option value="no">No</option>

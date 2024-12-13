@@ -16,6 +16,35 @@ export const validateForm = (state) =>{
                                 }
                             }
                             break;
+                case "postalCode" : {
+                                    const regex = /^[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d$/;
+                                        if(!(regex.test(currentObj.value))){
+                                            tempState = {
+                                                ...tempState,
+                                                [obj]:{
+                                                    value: tempState[obj].value,
+                                                    "errorStatus":true,
+                                                    "errorMessage":"Invalid postal code format"
+                                                }
+                                            }
+                                        }
+                                    }
+                                    break;
+                case "email" : {
+                                    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+                                        if(!(regex.test(currentObj.value))){
+                                            tempState = {
+                                                ...tempState,
+                                                [obj]:{
+                                                    value: tempState[obj].value,
+                                                    "errorStatus":true,
+                                                    "errorMessage":"Invalid email format"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        break;
+                                    
                 }
         }
         else{
