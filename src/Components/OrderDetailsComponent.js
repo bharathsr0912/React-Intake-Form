@@ -19,7 +19,7 @@ function OrderDetailsComponent({registerSubmit, clearForm}){
             errorMessage:""
         },
         orderType:{
-            value:"",
+            value:"Supply & Install",
             errorStatus:false,
             errorMessage:""
         },
@@ -101,7 +101,7 @@ function OrderDetailsComponent({registerSubmit, clearForm}){
                 errorMessage:""
             },
             orderType:{
-                value:"",
+                value:"Supply & Install",
                 errorStatus:false,
                 errorMessage:""
             },
