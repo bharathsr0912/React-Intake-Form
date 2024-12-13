@@ -5,7 +5,7 @@ export const validateForm = (state) =>{
         let currentObj = state[obj]
         if(currentObj.value.length>0){
             switch(obj){
-                case "phone": if(!(currentObj.value.length==10)){
+                case "phone": if(!(currentObj.value.length===10)){
                                 tempState = {
                                     ...tempState,
                                     [obj]:{
@@ -44,6 +44,7 @@ export const validateForm = (state) =>{
                                             }
                                         }
                                         break;
+                default : break;
                                     
                 }
         }
