@@ -38,7 +38,6 @@ function ContainerComponent(){
               else {
                 pdfBlob = pdfBlob.output("blob")
               }
-              console.log(pdfBlob)
               await sendEmail(pdfBlob, woNumber,setloadingState)
             }
             catch(e){

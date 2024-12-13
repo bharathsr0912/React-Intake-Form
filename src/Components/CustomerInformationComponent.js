@@ -272,7 +272,7 @@ function CustomerInformationComponent({registerSubmit,clearForm}){
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                             <input 
-                                type="number" 
+                                type="tel" 
                                 placeholder="905-123-1234" 
                                 id="phoneNumber" 
                                 value={state['phoneNumber']["value"]} 

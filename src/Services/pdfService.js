@@ -9,7 +9,7 @@ export const ConvertToPDF = () => {
     return new Promise((resolve, reject)=>{
 
         html2canvas(input).then((canvas) => {
-            const imgData = canvas.toDataURL('image/jpeg',0.5); 
+            const imgData = canvas.toDataURL('image/jpeg',0.7); 
         
             const pdfWidth = 420;  
             const pdfHeight = 297; 

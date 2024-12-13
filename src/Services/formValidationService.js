@@ -4,14 +4,18 @@ export const validateForm = (state) =>{
     for (var obj in state){
         let currentObj = state[obj]
         if(currentObj.value.length>0){
+           
             switch(obj){
-                case "phone": if(!(currentObj.value.length===10)){
-                                tempState = {
-                                    ...tempState,
-                                    [obj]:{
-                                        value: tempState[obj].value,
-                                        "errorStatus":true,
-                                        "errorMessage":"Number cannot exceed 10 characters "
+                case "phoneNumber": {
+                                    if(!(currentObj.value.length===10) || isNaN(currentObj.value)){
+                                    validationResult = false
+                                    tempState = {
+                                        ...tempState,
+                                        [obj]:{
+                                            value: tempState[obj].value,
+                                            "errorStatus":true,
+                                            "errorMessage":"Invalid phone number"
+                                        }
                                     }
                                 }
                             }
@@ -19,6 +23,7 @@ export const validateForm = (state) =>{
                 case "postalCode" : {
                                     const regex = /^[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d$/;
                                         if(!(regex.test(currentObj.value))){
+                                            validationResult = false
                                             tempState = {
                                                 ...tempState,
                                                 [obj]:{
@@ -33,6 +38,7 @@ export const validateForm = (state) =>{
                 case "email" : {
                                     const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
                                         if(!(regex.test(currentObj.value))){
+                                            validationResult = false
                                             tempState = {
                                                 ...tempState,
                                                 [obj]:{
