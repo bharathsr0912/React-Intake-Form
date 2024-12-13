@@ -28,14 +28,14 @@ function AttachmentsComponent({registerSubmit, clearForm}){
 
     return(
         <>
-        <div className="card rounded-0">
+        <div className="card rounded-0 h-100">
             <div className="card-header">
                 <b>Attachments</b>
             </div>
-            <div className="card-body background-color-grey pointer">
-            <div onClick={() => document.getElementById('file-input').click()} className="text-center">
-                <p>Click here to select file</p>
-            </div>
+            <div className="card-body background-color-grey pointer text-center" onClick={() => document.getElementById('file-input').click()} >
+          
+                <p className="pt-5">Click here to select file</p>
+           
             <input
                 type="file"
                 id="file-input"

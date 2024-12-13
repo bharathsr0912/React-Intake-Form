@@ -56,7 +56,7 @@ function ContainerComponent(){
 
     return(
         <div className='container-fluid'>
-        <div className='card mt-5 ms-2 me-2 text-align-left'>
+        <div className='card mt-2 ms-2 me-2 text-align-left'>
           <div className="card-header background-color-blue text-white">
             New Order Intake - Supply and Install
           </div>
@@ -77,7 +77,8 @@ function ContainerComponent(){
                 <AttachmentsComponent registerSubmit = {(submit)=>{attachmentForm.current = submit}} clearForm = {(clear)=>{clearAttachment.current = clear}}/>
               </div>
             </div>
-            <div className="d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-0">
+
+            <div className="d-grid gap-2 d-md-flex justify-content-md-end mt-1 mb-0">
 
             {loadingState?
               <div className="spinner-border pe-2" role="status">

@@ -1,0 +1,99 @@
+[
+    
+        {
+            "name":"Windows",
+            "id":"windows",
+            "input":"text",
+            "placeholder":0
+        },
+        {
+            "name":"CleanBC IQP Code Required Before Ordering Product",
+            "id":"cleanBcIqpCode",
+            "input":"select",
+            "disbaled":"Select Option",
+            "options":[
+                {
+                    "name":"Yes",
+                    "value":"yes",
+                    "default":false
+                },
+                {
+                    "name":"No",
+                    "value":"no",
+                    "default":false
+                }
+            ]
+        },
+        {
+            "name":"Patio doors",
+            "id":"patioDoors",
+            "input":"text",
+            "placeholder":0
+        },
+        {
+            "name":"Doors Saved in Codel Program?",
+            "id":"doorsSaved",
+            "input":"select",
+            "disbaled":"N/A",
+            "options":[
+                {
+                    "name":"Yes",
+                    "value":"yes",
+                    "default":false
+                },
+                {
+                    "name":"No",
+                    "value":"no",
+                    "default":false
+                }
+            ]
+        },
+        {
+            "name":"Doors",
+            "id":"doors",
+            "input":"text",
+            "placeholder":0
+        },
+        {
+            "name":"Was a future opportunity created",
+            "id":"futureOpportunity",
+            "input":"select",
+            "disbaled":"Select Option",
+            "options":[
+                {
+                    "name":"Yes",
+                    "value":"yes",
+                    "default":false
+                },
+                {
+                    "name":"No",
+                    "value":"no",
+                    "default":false
+                }
+            ]
+        },
+        {
+            "name":"Sealed Units",
+            "id":"sealedUnits",
+            "input":"text",
+            "placeholder":0
+        },{
+            "name":"Alteration drwaing & Price Breakdown Submitted",
+            "id":"drwaing",
+            "input":"select",
+            "disbaled":"Select Option",
+            "options":[
+                {
+                    "name":"Yes",
+                    "value":"yes",
+                    "default":false
+                },
+                {
+                    "name":"No",
+                    "value":"no",
+                    "default":false
+                }
+            ]
+        }
+    
+]

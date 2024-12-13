@@ -1,0 +1,186 @@
+[
+    {
+        "name":"Branch",
+        "id":"branch",
+        "input":"select",
+        "disbaled":"Select Option",
+        "options":[
+            {
+                "name":"AA",
+                "value":"AA",
+                "default":false
+            },
+            {
+                "name":"AB",
+                "value":"AB",
+                "default":false
+            },
+            {
+                "name":"AC",
+                "value":"AC",
+                "default":false
+            },
+            {
+                "name":"AD",
+                "value":"AD",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Remeasure Required",
+        "id":"remeasureRequired",
+        "input":"select",
+        "options":[
+            {
+                "name":"Yes",
+                "value":"yes",
+                "default":true
+            },
+            {
+                "name":"No",
+                "value":"no",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Order Type",
+        "id":"orderType",
+        "input":"select",
+        "options":[
+            {
+                "name":"Supply & Install",
+                "value":"Supply & Install",
+                "default":true
+            },
+            {
+                "name":"Supply Only",
+                "value":"Supply Only",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Delivery Zone",
+        "id":"deliveryZone",
+        "input":"select",
+        "disbaled":"Select Zone",
+        "options":[
+            {
+                "name":"Zone A",
+                "value":"Zone A",
+                "default":false
+            },
+            {
+                "name":"Zone B",
+                "value":"Zone B",
+                "default":false
+            },
+            {
+                "name":"Zone C",
+                "value":"Zone C",
+                "default":false
+            },
+            {
+                "name":"Zone D",
+                "value":"Zone D",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Home Depot Order",
+        "id":"homeDepotOrder",
+        "input":"select",
+        "disbaled":"Select Option",
+        "options":[
+            {
+                "name":"Yes",
+                "value":"yes",
+                "default":false
+            },
+            {
+                "name":"No",
+                "value":"no",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Payment Type",
+        "id":"paymentType",
+        "input":"select",
+        "disbaled":"Select Payment",
+        "options":[
+            {
+                "name":"Cash",
+                "value":"Cash",
+                "default":false
+            },
+            {
+                "name":"Credit Card",
+                "value":"Credit Card",
+                "default":false
+            },
+            {
+                "name":"Debit card",
+                "value":"Debit card",
+                "default":false
+            },
+            {
+                "name":"Gift card",
+                "value":"Gift card",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"Lead Source",
+        "id":"leadResource",
+        "input":"text",
+        "placeholder":"Lead Name"
+    },
+    {
+        "name":"Sell Price (Before Tax)",
+        "id":"sellPrice",
+        "input":"text",
+        "placeholder":0
+    },
+    {
+        "name":"Estimator",
+        "id":"estimator",
+        "input":"select",
+        "disbaled":"Select Estimator",
+        "options":[
+            {
+                "name":"Tax estimator",
+                "value":"Tax Estimator",
+                "default":false
+            },
+            {
+                "name":"Price Estimator",
+                "value":"Price Estimator",
+                "default":false
+            }
+        ]
+    },
+    {
+        "name":"List Price",
+        "id":"listPrice",
+        "input":"text",
+        "placeholder":0.00
+    },
+    {
+        "name":"Marketer",
+        "id":"marketer",
+        "input":"text",
+        "placeholder":"Market Name"
+    },
+    {
+        "name":"Deposit Value",
+        "id":"depositValue",
+        "input":"text",
+        "placeholder":"0.0"
+    }
+]

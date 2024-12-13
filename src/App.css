@@ -82,3 +82,8 @@
 .pointer{
   cursor: pointer;
 }
+
+.div-height{
+  height:275px !important;
+  overflow-y: auto;
+}

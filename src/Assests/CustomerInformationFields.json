@@ -1,0 +1,57 @@
+[
+    {
+        "name":"Customer number",
+        "id":"cnumber",
+        "input":"text",
+        "placeholder":123456
+    },
+    {
+        "name":"Street Address",
+        "id":"streetAddress",
+        "input":"text",
+        "placeholder":"Street Address"
+    },
+    {
+        "name":"Work Order #",
+        "id":"workOrder",
+        "input":"text",
+        "placeholder":"A1230"
+    },
+    {
+        "name":"Province",
+        "id":"province",
+        "input":"text",
+        "placeholder":"BC"
+    },
+    {
+        "name":"Customer Name",
+        "id":"customerName",
+        "input":"text",
+        "placeholder":"John Doe"
+    },
+    {
+        "name":"City",
+        "id":"city",
+        "input":"text",
+        "placeholder":"Langley"
+    },
+    {
+        "name":"Email",
+        "id":"email",
+        "input":"text",
+        "placeholder":"johndoe@gmail.com"
+    },
+    {
+        "name":"Postal Code",
+        "id":"postalCode",
+        "input":"text",
+        "placeholder":"V3E2X5"
+    },
+    {
+        "name":"Phone number",
+        "id":"phoneNumber",
+        "input":"text",
+        "placeholder":"905-123-1234"
+    }
+    
+]
