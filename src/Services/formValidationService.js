@@ -4,9 +4,8 @@ export const validateForm = (state) =>{
     for (var obj in state){
         let currentObj = state[obj]
         if(currentObj.value.length>0){
-           
             switch(obj){
-                case "phoneNumber": {
+                case "phoneNumber": 
                                     if(!(currentObj.value.length===10) || isNaN(currentObj.value)){
                                     validationResult = false
                                     tempState = {
@@ -17,7 +16,7 @@ export const validateForm = (state) =>{
                                             "errorMessage":"Invalid phone number"
                                         }
                                     }
-                                }
+                                
                             }
                             break;
                 case "postalCode" : {
