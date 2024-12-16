@@ -62,18 +62,18 @@ function ContainerComponent(){
           </div>
           <div className="card-body">
             <div className='row'>
-              <div className='col-sp 12 col-md-6 col-lg-6 col-xl-6 pe-0'>
+              <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6 pe-0'>
                 <CustomerInformationComponent registerSubmit = {(submit)=>{customerInformationForm.current = submit}} clearForm = {(clear)=>{clearCustomerInformation.current = clear}}/>
               </div>
-              <div className='col-sp 12 col-md-6 col-lg-6 col-xl-6'>
+              <div className='col-sm-12 col-md-12 col-lg-6 col-xl-6'>
                 <OrderDetailsComponent registerSubmit = {(submit)=>{orderDetailsForm.current = submit}} clearForm = {(clear)=>{clearOrderDetails.current = clear}}/>
               </div>  
             </div>
             <div className='row mt-2'>
-              <div className='col-sp 12 col-md-7 col-lg-7 col-xl-7 pe-0'>
+              <div className='col-sm-12 col-md-12 col-lg-7 col-xl-7 pe-0'>
                 <ProductSummaryComponent registerSubmit = {(submit)=>{productSummaryform.current = submit}} clearForm = {(clear)=>{clearProductSummary.current = clear}}/>
               </div>
-              <div className='col-sp 12 col-md-5 col-lg-5 col-xl-5'>
+              <div className='col-sm-12 col-md-12 col-lg-5 col-xl-5'>
                 <AttachmentsComponent registerSubmit = {(submit)=>{attachmentForm.current = submit}} clearForm = {(clear)=>{clearAttachment.current = clear}}/>
               </div>
             </div>
